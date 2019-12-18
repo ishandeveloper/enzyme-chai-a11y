@@ -11,8 +11,7 @@
     "url": "https://github.com/vikas-parashar"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "scripts": {
     "lint": "eslint .",
