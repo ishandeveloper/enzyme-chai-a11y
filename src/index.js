@@ -1,4 +1,3 @@
-// @flow
 import Enzyme, { mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import axeCore from "axe-core";
@@ -32,7 +31,7 @@ Help URL: ${chalk.blue(violation.helpUrl)}
 
 export function accessible(chai) {
   chai.Assertion.addMethod("accessible", function accessibleCb() {
-    const { violations } = this._obj;
+    const { violations } = this._obj; // eslint-disable-line no-underscore-dangle
     const audit = new chai.Assertion(violations);
     const pass = violations.length === 0;
 
