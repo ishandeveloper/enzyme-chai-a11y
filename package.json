@@ -1,6 +1,6 @@
 {
   "name": "enzyme-chai-a11y",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1",
   "description": "Accessibility testing plugin for chai based on axe-core",
   "license": "MIT",
   "repository": "",
@@ -15,18 +15,13 @@
     "src"
   ],
   "scripts": {
-    "test": "jest",
-    "coverage": "npm test -- --coverage",
-    "postcoverage": "open-cli coverage/lcov-report/index.html",
     "lint": "eslint .",
-    "flow": "flow check",
     "docs": "documentation readme src --section=API",
     "postdocs": "git add README.md",
     "clean": "rimraf dist",
-    "flowbuild": "flow-copy-source src dist",
-    "prebuild": "npm run docs && npm run clean && npm run flowbuild",
+    "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d dist",
-    "prerelease": "npm run lint && npm test && npm run build",
+    "prerelease": "npm run lint && npm run build",
     "release": "standard-version",
     "postpublish": "git push origin master --follow-tags"
   },
