@@ -1,6 +1,6 @@
 {
   "name": "enzyme-chai-a11y",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Accessibility testing plugin for chai based on axe-core",
   "license": "MIT",
   "repository": {
