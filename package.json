@@ -3,23 +3,27 @@
   "version": "0.0.4",
   "description": "Accessibility testing plugin for chai based on axe-core",
   "license": "MIT",
-  "repository": "",
-  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/interviewstreet/enzyme-chai-a11y"
+  },
+  "main": "lib/index.js",
   "author": {
     "name": "Vikas Parashar",
     "email": "svnitvikas@gmail.com",
     "url": "https://github.com/vikas-parashar"
   },
   "files": [
-    "dist"
+    "lib",
+    "src"
   ],
   "scripts": {
     "lint": "eslint .",
     "docs": "documentation readme src --section=API",
     "postdocs": "git add README.md",
-    "clean": "rimraf dist",
+    "clean": "rimraf lib",
     "prebuild": "npm run docs && npm run clean",
-    "build": "babel src -d dist",
+    "build": "babel src -d lib",
     "prerelease": "npm run lint && npm run build",
     "release": "standard-version",
     "postpublish": "git push origin master --follow-tags"
@@ -44,7 +48,7 @@
     "chalk": "3.0.0",
     "enzyme": "3.10.0",
     "jest-matcher-utils": "24.9.0",
-    "enzyme-adapter-react-16": "1.15.1"
+    "enzyme-adapter-react-16": "1.15.2"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
@@ -71,5 +75,11 @@
     "prettier": "1.18.2",
     "rimraf": "2.6.3",
     "standard-version": "6.0.1"
+  },
+  "peerDependencies": {
+    "axe-core": "^3.4.1",
+    "chai": "^4.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2"
   }
 }
