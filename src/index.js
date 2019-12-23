@@ -58,6 +58,12 @@ export async function runAxe(node, config) {
 }
 
 // config: https://github.com/dequelabs/axe-core/blob/master/doc/API.md#options-parameter
+/**
+ * Runs the axe-core on passed component.
+ * @param {node} app node to test
+ * @param {object} config axe-core config
+ * @param {object} enzymeConfig enzyme config
+ */
 async function auditA11y(app, config = {}, enzymeConfig = {}) {
   const div = document.createElement("div");
   document.body.appendChild(div);
