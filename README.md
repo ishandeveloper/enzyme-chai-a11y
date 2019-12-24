@@ -10,11 +10,11 @@ Accessibility testing plugin for chai based on axe-core
 
 npm:
 
-    npm i enzyme-chai-a11y
+    npm i enzyme-chai-a11y --save-dev
 
 Yarn:
 
-    yarn add enzyme-chai-a11y
+    yarn add enzyme-chai-a11y --dev
 
 ## Usage
 
