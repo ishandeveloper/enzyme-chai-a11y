@@ -1,6 +1,6 @@
 {
   "name": "enzyme-chai-a11y",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Accessibility testing plugin for chai based on axe-core",
   "license": "MIT",
   "repository": {
@@ -53,12 +53,12 @@
     "@babel/plugin-proposal-class-properties": "7.4.4",
     "@babel/preset-env": "7.4.5",
     "@babel/preset-flow": "7.0.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "0.6.3",
     "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
     "chai": "^4.2.0",
     "documentation": "11.0.1",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "6.0.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-config-prettier": "5.0.0",
@@ -77,8 +77,8 @@
     "standard-version": "6.0.1"
   },
   "peerDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "0.6.3",
     "chai": "^4.2.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2"
+    "enzyme": "^3.11.0"
   }
 }
